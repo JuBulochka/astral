@@ -606,3 +606,21 @@
         });
     }
 });
+
+// ========== 11. Card Detail Page Navigation ==========
+if (document.querySelector('.page-card-detail')) {
+    (function () {
+        var params = new URLSearchParams(location.search);
+        var cardParam = params.get('card');
+        var knownIds = Array.from(document.querySelectorAll('.card-detail')).map(function (el) { return el.id; });
+        var target = null;
+        if (cardParam) {
+            target = knownIds.includes(cardParam) ? cardParam : 'shut';
+        } else if (!location.hash || !knownIds.includes(location.hash.slice(1))) {
+            target = 'shut';
+        }
+        if (target) {
+            location.replace(location.pathname + '#' + target);
+        }
+    })();
+}
