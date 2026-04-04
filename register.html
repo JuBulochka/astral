@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АСТРАЛ - Посвящение</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="page-auth">
+<header class="main-header">
+        <div class="header-left">
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">АСТРАЛ</div>
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+</header>
+<div class="app">
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-moon"></i> Астрология</a></li>
+            <li><a href="tarot.html"><i class="fas fa-hand-sparkles"></i> Карты Таро</a></li>
+            <li><a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a></li>
+            <li><a href="compatibility.html"><i class="fas fa-heart"></i> Совместимость</a></li>
+            <li><a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a></li>
+            <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main class="auth-canvas">
+        <div class="auth-glass-card">
+            <h2>Посвящение</h2>
+            <p class="auth-subtitle">Оставьте след в нашей звездной карте</p>
+
+            <form id="registerForm" onsubmit="event.preventDefault(); document.getElementById('registerBtn').click();">
+                <div class="auth-form-group">
+                    <input type="text" id="regName" class="auth-input" placeholder="Ваше Имя" required>
+                    <i class="fas fa-user input-icon"></i>
+                </div>
+                <div class="auth-form-group">
+                    <input type="email" id="regEmail" class="auth-input" placeholder="Астральный Email" required>
+                    <i class="fas fa-envelope input-icon"></i>
+                </div>
+                <div class="auth-form-group">
+                    <input type="password" id="regPassword" class="auth-input" placeholder="Тайный Ключ (от 4 симв.)" required>
+                    <i class="fas fa-key input-icon"></i>
+                </div>
+                <div class="auth-form-group">
+                    <select id="regZodiac" class="auth-input" required>
+                        <option value="" disabled selected hidden>Ваш знак зодиака</option>
+                        <option value="aries">♈ Овен</option>
+                        <option value="taurus">♉ Телец</option>
+                        <option value="gemini">♊ Близнецы</option>
+                        <option value="cancer">♋ Рак</option>
+                        <option value="leo">♌ Лев</option>
+                        <option value="virgo">♍ Дева</option>
+                        <option value="libra">♎ Весы</option>
+                        <option value="scorpio">♏ Скорпион</option>
+                        <option value="sagittarius">♐ Стрелец</option>
+                        <option value="capricorn">♑ Козерог</option>
+                        <option value="aquarius">♒ Водолей</option>
+                        <option value="pisces">♓ Рыбы</option>
+                    </select>
+                    <i class="fas fa-star input-icon"></i>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                </div>
+
+                <div class="msg-container">
+                    <div id="registerError" class="error-msg"></div>
+                    <div id="registerSuccess" class="success-msg"></div>
+                </div>
+
+                <button type="button" class="auth-submit-btn" id="registerBtn">
+                    Присоединиться к Ордену <i class="fas fa-sparkles"></i>
+                </button>
+            </form>
+
+            <div class="auth-divider">УЖЕ С НАМИ?</div>
+
+            <div class="auth-footer-links">
+                <a href="login.html">Вернуться к Вратам Астрала</a>
+            </div>
+        </div>
+    </main>
+<footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>

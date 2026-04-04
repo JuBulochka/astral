@@ -1,0 +1,106 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АСТРАЛ - Печать Судьбы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="page-compatibility page-destiny-editorial">
+    <header class="main-header">
+        <div class="header-left">
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user-astronaut"></i></a>
+        </div>
+        <div class="logo">АСТРАЛ</div>
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+<div class="app">
+    <div class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-moon"></i> Астрология</a></li>
+            <li><a href="tarot.html"><i class="fas fa-hand-sparkles"></i> Карты Таро</a></li>
+            <li><a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a></li>
+            <li><a href="compatibility.html"><i class="fas fa-heart"></i> Совместимость</a></li>
+            <li><a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a></li>
+            <li><a href="login.html" id="menuAuthLink"><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main class="main-content compat-wrapper">
+        <div class="compat-hero-editorial">
+            <div class="compat-hero-title">
+                <span class="subtitle-editorial"><i class="fas fa-moon"></i> Печать Судьбы</span>
+                <h2>Рассчитайте свой кармический код</h2>
+                <p>Узнайте ваш кармический код через магию чисел и луны</p>
+            </div>
+            
+            <div class="card premium-editorial-card compat-editorial-card compat-editorial-card--mt">
+                <div class="inputs-row-editorial destiny-inputs">
+                    <div class="input-editorial-group">
+                        <label for="destName">Ваше имя</label>
+                        <input type="text" id="destName" placeholder="Введите имя" class="destiny-date-input" autocomplete="off" />
+                    </div>
+
+                    <div class="input-editorial-group">
+                        <label for="destDate">Дата рождения</label>
+                        <input type="date" id="destDate" class="destiny-date-input" />
+                    </div>
+
+                    <div class="input-editorial-group">
+                        <label for="destMoon">Фаза Луны при рождении</label>
+                        <select id="destMoon" class="destiny-date-input">
+                            <option value="" disabled selected>Выберите фазу</option>
+                            <option value="new">Новолуние (Скрытая Луна)</option>
+                            <option value="waxing">Растущая Луна</option>
+                            <option value="full">Полнолуние</option>
+                            <option value="waning">Убывающая Луна</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="compat-action-editorial">
+                    <button class="mystical-gold-btn" id="calcDestinyBtn">
+                        Прочитать судьбу <i class="fas fa-magic"></i>
+                    </button>
+                </div>
+
+                <div id="destinyResultArea"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

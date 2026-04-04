@@ -1,0 +1,200 @@
+﻿<!-- tarot.html - Страница Карты Таро (78 карт) с ссылками на детальную страницу -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АСТРАЛ - Карты Таро</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="page-tarot">
+<header class="main-header">
+        <div class="header-left">
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">АСТРАЛ</div>
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+<div class="app">
+
+    
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-moon"></i> Астрология</a></li>
+            <li><a href="tarot.html"><i class="fas fa-hand-sparkles"></i> Карты Таро</a></li>
+            <li><a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a></li>
+            <li><a href="compatibility.html"><i class="fas fa-heart"></i> Совместимость</a></li>
+            <li><a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a></li>
+            <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main class="main-content page-editorial">
+        <section class="editorial-hero">
+            <span class="subtitle">78 ключей к подсознанию</span>
+            <h1 class="title">Карты Таро</h1>
+            <p class="description">Таро — это система символов, 78 карт, отражающих жизненные пути, архетипы и судьбу. Нажмите на любую карту, чтобы узнать её значение.</p>
+        </section>
+
+        <div class="tarot-filter-tabs">
+            <button class="tarot-tab active" data-filter="all">Все карты</button>
+            <button class="tarot-tab" data-filter="major">Старшие</button>
+            <button class="tarot-tab" data-filter="wands">Жезлы</button>
+            <button class="tarot-tab" data-filter="cups">Кубки</button>
+            <button class="tarot-tab" data-filter="swords">Мечи</button>
+            <button class="tarot-tab" data-filter="pentacles">Пентакли</button>
+        </div>
+
+        <!-- СТАРШИЕ АРКАНЫ (22 карты) -->
+        <div class="card tarot-category" data-category="major">
+            <h3 class="section-title"><i class="fas fa-star"></i> Старшие Арканы (22)</h3>
+            <div class="tarot-grid">
+                <a href="card-detail.html#shut" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Шут</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=mag" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Маг</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=priestess" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Верховная Жрица</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=empress" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Императрица</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=emperor" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Император</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=hierophant" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Иерофант</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=lovers" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Влюбленные</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=chariot" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Колесница</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=strength" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Сила</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=hermit" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Отшельник</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=wheel" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Колесо Фортуны</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=justice" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Справедливость</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=hanged" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Повешенный</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=death" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Смерть</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=temperance" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Умеренность</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=devil" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Дьявол</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=tower" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Башня</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=star" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Звезда</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=moon" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Луна</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=sun" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Солнце</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=judgment" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Суд</strong><br><small>Старший Аркан</small></a>
+                <a href="card-detail.html?card=world" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Мир</strong><br><small>Старший Аркан</small></a>
+            </div>
+        </div>
+
+        <!-- МЛАДШИЕ АРКАНЫ - ЖЕЗЛЫ -->
+        <div class="card tarot-category" data-category="wands">
+            <h3 class="section-title"><i class="fas fa-fire"></i> Жезлы (14 карт)</h3>
+            <div class="tarot-grid">
+                <a href="card-detail.html?card=wands-ace" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Туз Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-2" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>2 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-3" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>3 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-4" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>4 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-5" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>5 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-6" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>6 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-7" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>7 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-8" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>8 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-9" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>9 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-10" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>10 Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-page" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Паж Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-knight" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Рыцарь Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-queen" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Королева Жезлов</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=wands-king" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Король Жезлов</strong><br><small>Младший Аркан</small></a>
+            </div>
+        </div>
+
+        <!-- МЛАДШИЕ АРКАНЫ - КУБКИ -->
+        <div class="card tarot-category" data-category="cups">
+            <h3 class="section-title"><i class="fas fa-water"></i> Кубки (14 карт)</h3>
+            <div class="tarot-grid">
+                <a href="card-detail.html?card=cups-ace" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Туз Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-2" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>2 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-3" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>3 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-4" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>4 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-5" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>5 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-6" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>6 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-7" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>7 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-8" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>8 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-9" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>9 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-10" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>10 Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-page" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Паж Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-knight" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Рыцарь Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-queen" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Королева Кубков</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=cups-king" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Король Кубков</strong><br><small>Младший Аркан</small></a>
+            </div>
+        </div>
+
+        <!-- МЛАДШИЕ АРКАНЫ - МЕЧИ -->
+        <div class="card tarot-category" data-category="swords">
+            <h3 class="section-title"><i class="fas fa-wind"></i> Мечи (14 карт)</h3>
+            <div class="tarot-grid">
+                <a href="card-detail.html?card=swords-ace" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Туз Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-2" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>2 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-3" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>3 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-4" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>4 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-5" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>5 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-6" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>6 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-7" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>7 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-8" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>8 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-9" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>9 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-10" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>10 Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-page" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Паж Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-knight" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Рыцарь Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-queen" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Королева Мечей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=swords-king" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Король Мечей</strong><br><small>Младший Аркан</small></a>
+            </div>
+        </div>
+
+        <!-- МЛАДШИЕ АРКАНЫ - ПЕНТАКЛИ -->
+        <div class="card tarot-category" data-category="pentacles">
+            <h3 class="section-title"><i class="fas fa-circle"></i> Пентакли (14 карт)</h3>
+            <div class="tarot-grid">
+                <a href="card-detail.html?card=pentacles-ace" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Туз Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-2" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>2 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-3" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>3 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-4" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>4 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-5" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>5 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-6" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>6 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-7" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>7 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-8" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>8 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-9" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>9 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-10" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>10 Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-page" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Паж Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-knight" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Рыцарь Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-queen" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Королева Пентаклей</strong><br><small>Младший Аркан</small></a>
+                <a href="card-detail.html?card=pentacles-king" class="tarot-card"><i class="fas fa-hand-peace"></i><br><strong>Король Пентаклей</strong><br><small>Младший Аркан</small></a>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+</div>
+
+
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

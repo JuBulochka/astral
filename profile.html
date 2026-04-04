@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АСТРАЛ - Личный кабинет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="page-profile">
+<header class="main-header">
+        <div class="header-left">
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">АСТРАЛ</div>
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+<div class="app">
+
+    
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-moon"></i> Астрология</a></li>
+            <li><a href="tarot.html"><i class="fas fa-hand-sparkles"></i> Карты Таро</a></li>
+            <li><a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a></li>
+            <li><a href="compatibility.html"><i class="fas fa-heart"></i> Совместимость</a></li>
+            <li><a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a></li>
+            <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+<main class="main-content page-profile-specific">
+        <div class="profile-intro">
+            <h2 class="astral-title">Ваш Профиль</h2>
+            <p class="astral-subtitle">✨ Ваше место в огромной вселенной АСТРАЛ ✨</p>
+        </div>
+
+        <!-- Блок для авторизованного пользователя -->
+        <div id="userBlock" class="profile-dashboard">
+
+            <div class="card premium-profile-card">
+                <div class="premium-avatar">
+                    <i class="fas fa-moon"></i>
+                </div>
+
+                <div class="premium-user-info">
+                    <h2 class="premium-name" id="profileName">-</h2>      
+                    <div class="mystic-divider">✧ ✦ ✧</div>
+                    
+                    <div class="premium-details">
+                        <div class="p-detail">
+                            <span><i class="fas fa-envelope"></i> Почта</span>
+                            <strong id="profileEmail">-</strong>
+                        </div>
+                        <div class="p-detail">
+                            <span><i class="fas fa-star"></i> В системе с</span>
+                            <strong id="profileDate">-</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn premium-logout-btn" id="logoutBtn">
+                    Выйти из системы        
+                </button>
+            </div>
+
+            <div class="card premium-favorites-card">
+                <div class="fav-header-premium">
+                    <h3><i class="fas fa-heart"></i> Ваше Избранное</h3>    
+                    <span class="fav-count-badge" id="favCount">0</span>
+                </div>
+                <div class="favorites-grid" id="favoritesList"></div>
+            </div>
+        </div>
+
+        <!-- Блок неавторизованного пользователя -->
+        <div id="guestBlock" class="card premium-guest-card">
+            <i class="fas fa-lock guest-lock-icon"></i>
+            <h2 class="premium-name guest-heading">Доступ закрыт</h2>
+            <p class="guest-text">Вам нужно войти в систему или зарегистрироваться, чтобы получить доступ к своему профилю и сохранённым картам.</p>
+            <div class="guest-actions">
+                <a href="login.html" class="btn btn-login-gold">Войти</a>
+                <a href="register.html" class="btn btn-register-outline">Создать аккаунт</a>
+            </div>
+        </div>
+</main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+</div>
+
+
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>

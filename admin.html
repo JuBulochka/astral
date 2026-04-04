@@ -1,0 +1,198 @@
+﻿<!-- admin.html - Админка (управление контентом) -->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АСТРАЛ - Админка</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap"
+      rel="stylesheet"
+    />
+    
+  
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+  <body class="page-admin">
+<header class="main-header">
+        <div class="header-left">
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">АСТРАЛ</div>
+        <div class="header-right">
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="app">
+
+    
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenuBtn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-moon"></i> Астрология</a>
+          </li>
+          <li>
+            <a href="tarot.html"
+              ><i class="fas fa-hand-sparkles"></i> Карты Таро</a
+            >
+          </li>
+          <li>
+            <a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a>
+          </li>
+          <li>
+            <a href="compatibility.html"
+              ><i class="fas fa-heart"></i> Совместимость</a
+            >
+          </li>
+          <li>
+            <a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><i class="fas fa-id-card"></i> Личный кабинет</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      
+      <main class="main-content page-profile-specific">
+          <div class="premium-hero admin-hero">
+              <h1 class="premium-title"><i class="fas fa-crown"></i> Панель Администратора</h1>
+              <p class="premium-subtitle">Управление сакральным контентом</p>
+          </div>
+
+          <div class="admin-cards-grid">
+
+              <!-- Блок статистики -->
+                <div class="card premium-guest-card admin-panel-card admin-panel-card--center">
+                    <i class="fas fa-chart-line admin-panel-icon"></i>
+                    <h3 class="admin-panel-title">Статистика</h3>
+
+                    <div class="stats-box admin-stats-row">
+                        <div class="admin-stat-item">
+                            <div id="adminUsersCount" class="admin-stat-num">0</div>
+                            <div class="admin-stat-label"><i class="fas fa-users"></i> Юзеров</div>
+                        </div>
+                        <div class="admin-stat-item">
+                            <div id="statsCount" class="admin-stat-num">0</div>
+                            <div class="admin-stat-label"><i class="fas fa-star"></i> Сохранений</div>
+                        </div>
+                    </div>
+
+                    <button class="btn premium-logout-btn admin-clear-btn" id="clearFavoritesBtn">
+                        <i class="fas fa-trash-alt"></i> Очистить все избранное
+                    </button>
+                </div>
+
+                <!-- Блок Гороскопов -->
+                <div class="card premium-guest-card admin-panel-card">
+                    <div class="admin-panel-card-header">
+                        <i class="fas fa-moon admin-panel-icon"></i>
+                        <h3 class="admin-panel-title--nb">Редактирование Гороскопа</h3>
+                        <p class="admin-panel-hint">Выберите знак — поля заполнятся текущими данными. Измените нужное и сохраните.</p>
+                    </div>
+
+                    <div class="input-editorial-group admin-form-group">
+                        <label for="adminZodiacSign" class="admin-label">Знак зодиака</label>
+                        <select id="adminZodiacSign" class="admin-field admin-field-select">
+                            <option value="aries">♈ Овен</option>
+                            <option value="taurus">♉ Телец</option>
+                            <option value="gemini">♊ Близнецы</option>
+                            <option value="cancer">♋ Рак</option>
+                            <option value="leo">♌ Лев</option>
+                            <option value="virgo">♍ Дева</option>
+                            <option value="libra">♎ Весы</option>
+                            <option value="scorpio">♏ Скорпион</option>
+                            <option value="sagittarius">♐ Стрелец</option>
+                            <option value="capricorn">♑ Козерог</option>
+                            <option value="aquarius">♒ Водолей</option>
+                            <option value="pisces">♓ Рыбы</option>
+                        </select>
+                    </div>
+
+                    <div class="admin-two-col">
+                        <div class="input-editorial-group">
+                            <label for="adminHoroscopeStart" class="admin-label"><i class="fas fa-calendar-alt"></i> Действует с</label>
+                            <input type="date" id="adminHoroscopeStart" class="admin-field">
+                        </div>
+                        <div class="input-editorial-group">
+                            <label for="adminHoroscopeEnd" class="admin-label"><i class="fas fa-calendar-check"></i> Действует по</label>
+                            <input type="date" id="adminHoroscopeEnd" class="admin-field">
+                        </div>
+                    </div>
+
+                    <div class="input-editorial-group admin-form-group">
+                        <label for="adminHoroscopeText" class="admin-label">Основной прогноз</label>
+                        <textarea id="adminHoroscopeText" rows="5" class="admin-field admin-field-textarea"></textarea>
+                    </div>
+
+                    <div class="admin-two-col">
+                        <div class="input-editorial-group">
+                            <label for="adminHoroscopeAdvice" class="admin-label"><i class="fas fa-magic"></i> Совет дня</label>
+                            <input type="text" id="adminHoroscopeAdvice" class="admin-field">
+                        </div>
+                        <div class="input-editorial-group">
+                            <label for="adminHoroscopeColor" class="admin-label"><i class="fas fa-palette"></i> Удачный цвет</label>
+                            <input type="text" id="adminHoroscopeColor" class="admin-field">
+                        </div>
+                    </div>
+
+                    <div class="input-editorial-group admin-form-group--lg">
+                        <label for="adminHoroscopeNumber" class="admin-label"><i class="fas fa-dice"></i> Счастливое число</label>
+                        <input type="text" id="adminHoroscopeNumber" class="admin-field" placeholder="например: 7, 21">
+                    </div>
+
+                    <button class="btn admin-save-btn" id="saveHoroscopeBtn">
+                        <i class="fas fa-save"></i> Сохранить изменения
+                    </button>
+                    <button class="btn admin-reset-btn" id="resetHoroscopeBtn">
+                        <i class="fas fa-undo"></i> Сбросить до стандартного
+                    </button>
+                    <p id="adminHoroscopeFeedback"><i class="fas fa-check-circle"></i> Сохранено успешно!</p>
+                    <p id="adminHoroscopeReset"><i class="fas fa-undo"></i> Сброшено до стандартного</p>
+                </div>
+          </div>
+      </main>
+      <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+    </div>
+
+    
+      <script src="assets/js/script.js" defer></script>
+</body>
+</html>
+
+

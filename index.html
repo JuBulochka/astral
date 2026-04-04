@@ -1,0 +1,309 @@
+﻿<!-- index.html - Главная страница (Астрология) с фото-слайдером -->
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>АСТРАЛ - Астрология</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700%7CPlayfair+Display:400,500,600,700&subset=cyrillic,latin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+
+
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+</head>
+
+<body class="page-index">
+
+<header class="main-header">
+
+        <div class="header-left">
+
+            <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
+
+        </div>
+
+        <div class="logo">АСТРАЛ</div>
+
+        <div class="header-right">
+
+            <button class="burger-btn" id="burgerBtn"><i class="fas fa-bars"></i></button>
+
+        </div>
+
+    </header>
+
+<div class="app">
+
+
+
+    
+
+
+
+    <div class="side-menu" id="sideMenu">
+
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+
+        <ul>
+
+            <li><a href="index.html"><i class="fas fa-moon"></i> Астрология</a></li>
+
+            <li><a href="tarot.html"><i class="fas fa-hand-sparkles"></i> Карты Таро</a></li>
+
+            <li><a href="horoscope.html"><i class="fas fa-sun"></i> Гороскоп</a></li>
+
+            <li><a href="compatibility.html"><i class="fas fa-heart"></i> Совместимость</a></li>
+
+            <li><a href="destiny.html"><i class="fas fa-star-and-crescent"></i> Судьба</a></li>
+
+            <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+
+
+        <main class="main-content page-editorial">
+
+        <section class="editorial-hero">
+
+            <span class="subtitle">Искусство звёзд</span>
+
+            <h1 class="title">Астрология</h1>
+
+            <p class="description">Древнее знание о связи небесных сфер и событий в жизни человека. Звёзды укажут путь тому, кто их читает.</p>
+
+        </section>
+
+
+
+        <section class="editorial-quote">
+
+            <p>"Космос находится внутри нас. Мы сделаны из звездного вещества."</p>
+
+            <span class="editorial-quote-author">— Карл Саган</span>
+
+        </section>
+
+
+
+        <section class="editorial-section">
+
+            <div class="section-label">Сегодня под звёздами</div>
+
+            
+
+            <div class="swiper astrologySwiper editorial-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide editorial-slide">
+
+                        <div class="editorial-slide-img-wrapper">
+
+                            <img src="assets/img/start-img4.png" alt="Луна в Раке">
+
+                        </div>
+
+                        <div class="editorial-slide-text">
+
+                            <h4>Луна в Раке</h4>
+
+                            <p>Эмоциональность и семейные ценности</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide editorial-slide">
+
+                        <div class="editorial-slide-img-wrapper">
+
+                            <img src="assets/img/start-img1.png" alt="Солнце в Овне">
+
+                        </div>
+
+                        <div class="editorial-slide-text">
+
+                            <h4>Солнце в Овне</h4>
+
+                            <p>Энергия, лидерство и новые начинания</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide editorial-slide">
+
+                        <div class="editorial-slide-img-wrapper">
+
+                            <img src="assets/img/start-img7.png" alt="Меркурий ретроградный">
+
+                        </div>
+
+                        <div class="editorial-slide-text">
+
+                            <h4>Ретроград</h4>
+
+                            <p>Будьте внимательны, детальный анализ</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="swiper-nav-wrapper">
+
+                    <div class="swiper-button-prev"></div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="editorial-section no-border">
+
+            <div class="section-label">Лунный ежедневник</div>
+
+            <div class="editorial-grid">
+
+                <div class="editorial-grid-item">
+
+                    <div class="editorial-grid-item-label">Фаза</div>
+
+                    <div class="editorial-grid-item-value">Полнолуние</div>
+
+                </div>
+
+                <div class="editorial-grid-item">
+
+                    <div class="editorial-grid-item-label">Энергия</div>
+
+                    <div class="editorial-grid-item-value">Пиковая</div>
+
+                </div>
+
+                <div class="editorial-grid-item">
+
+                    <div class="editorial-grid-item-label">Ориентир</div>
+
+                    <div class="editorial-grid-item-value">Медитация, фокус на завершении дел</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="editorial-insight">
+
+            <div class="editorial-insight-image">
+
+                <img src="assets/img/shyt.jpg" alt="Мистический космос">
+
+            </div>
+
+            <div class="editorial-insight-content">
+
+                <h3>Глубина космоса</h3>
+
+                <p>Каждый из нас несет в себе частицу звездной пыли. Изучение астрологии — это путь к пониманию своей внутренней вселенной, поиску скрытых талантов и предназначения.</p>
+
+                <a href="horoscope.html" class="editorial-insight-btn">Ваш гороскоп <i class="fas fa-arrow-right icon-arrow-right"></i></a>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="editorial-join">
+
+            <h3>Отклик космоса</h3>
+
+            <p>Узнайте, что говорят звёзды о вашей судьбе</p>
+
+            <div class="editorial-join-links">
+
+                <a href="login.html">Войти</a>
+
+                <span>✦</span>
+
+                <a href="register.html">Регистрация</a>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Астрология</a>
+                <a href="tarot.html">Карты Таро</a>
+                <a href="horoscope.html">Гороскоп</a>
+                <a href="compatibility.html">Совместимость</a>
+                <a href="destiny.html">Судьба</a>
+                <a href="login.html">Авторизация</a>
+                <a href="admin.html">Админ-панель</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 АСТРАЛ — Магия звёзд и Таро. Все права защищены.</p>
+            <p>✨ Гармония Вселенной внутри тебя ✨</p>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+
+    <script src="assets/js/script.js" defer></script>
+
+</body>
+
+</html>
+
+
+
