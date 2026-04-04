@@ -115,6 +115,22 @@
         </div>
     </footer>
     </div>
+    <script>
+      (function () {
+        var params = new URLSearchParams(location.search);
+        var cardParam = params.get('card');
+        var knownIds = Array.from(document.querySelectorAll('.card-detail')).map(function (el) { return el.id; });
+        var target = null;
+        if (cardParam) {
+          target = knownIds.includes(cardParam) ? cardParam : 'shut';
+        } else if (!location.hash || !knownIds.includes(location.hash.slice(1))) {
+          target = 'shut';
+        }
+        if (target) {
+          location.replace(location.pathname + '#' + target);
+        }
+      })();
+    </script>
     <script src="assets/js/script.js" defer></script>
   </body>
 </html>
