@@ -24,6 +24,48 @@
     }
 
     // --- 3. Page-Specific: Admin ---
+
+    // Admin auth guard
+    const adminAuthOverlay = document.getElementById("adminAuthOverlay");
+    const adminContent = document.getElementById("adminContent");
+    if (adminAuthOverlay && adminContent) {
+        const ADMIN_LOGIN = "admin";
+        const ADMIN_PASSWORD = "admin";
+
+        function showAdminPanel() {
+            adminAuthOverlay.style.display = "none";
+            adminContent.style.display = "block";
+        }
+
+        if (sessionStorage.getItem("astral_admin_auth") === "1") {
+            showAdminPanel();
+        }
+
+        const adminLoginBtn = document.getElementById("adminLoginBtn");
+        if (adminLoginBtn) {
+            adminLoginBtn.onclick = () => {
+                const login = document.getElementById("adminLoginInput").value.trim();
+                const password = document.getElementById("adminPasswordInput").value.trim();
+                const errorDiv = document.getElementById("adminAuthError");
+                if (errorDiv) errorDiv.innerHTML = "";
+
+                if (login === ADMIN_LOGIN && password === ADMIN_PASSWORD) {
+                    sessionStorage.setItem("astral_admin_auth", "1");
+                    showAdminPanel();
+                } else {
+                    if (errorDiv) errorDiv.innerHTML = "Неверный логин или пароль";
+                }
+            };
+
+            const adminPasswordInput = document.getElementById("adminPasswordInput");
+            if (adminPasswordInput) {
+                adminPasswordInput.onkeypress = (e) => {
+                    if (e.key === "Enter") adminLoginBtn.click();
+                };
+            }
+        }
+    }
+
     const adminUsersCount = document.getElementById("adminUsersCount");
     const statsCount = document.getElementById("statsCount");
 

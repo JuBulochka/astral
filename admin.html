@@ -66,8 +66,31 @@
       </div>
       <div class="menu-overlay" id="menuOverlay"></div>
 
-      
-      <main class="main-content page-profile-specific">
+      <!-- Оверлей авторизации администратора -->
+      <div id="adminAuthOverlay" class="admin-auth-overlay">
+        <div class="auth-glass-card">
+          <h2><i class="fas fa-shield-alt"></i> Вход для администратора</h2>
+          <p class="auth-subtitle">Введите данные для доступа к панели управления</p>
+          <form id="adminLoginForm" onsubmit="event.preventDefault(); document.getElementById('adminLoginBtn').click();">
+            <div class="auth-form-group">
+              <input type="text" id="adminLoginInput" class="auth-input" placeholder="Логин" autocomplete="username" required>
+              <i class="fas fa-user input-icon"></i>
+            </div>
+            <div class="auth-form-group">
+              <input type="password" id="adminPasswordInput" class="auth-input" placeholder="Пароль" autocomplete="current-password" required>
+              <i class="fas fa-key input-icon"></i>
+            </div>
+            <div class="msg-container">
+              <div id="adminAuthError" class="error-msg"></div>
+            </div>
+            <button type="button" class="auth-submit-btn" id="adminLoginBtn">
+              Войти <i class="fas fa-door-open"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <main class="main-content page-profile-specific" id="adminContent" style="display:none">
           <div class="premium-hero admin-hero">
               <h1 class="premium-title"><i class="fas fa-crown"></i> Панель Администратора</h1>
               <p class="premium-subtitle">Управление сакральным контентом</p>
