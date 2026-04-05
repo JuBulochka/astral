@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="page-compatibility page-destiny-editorial">
-    <header class="main-header">
+    <!-- Шапка сайта: логотип, кнопка авторизации, бургер-меню -->
+<header class="main-header">
         <div class="header-left">
             <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user-astronaut"></i></a>
         </div>
@@ -27,6 +28,7 @@
     </header>
 
 <div class="app">
+    <!-- Боковое меню навигации -->
     <div class="side-menu" id="sideMenu">
         <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
         <ul>
@@ -38,8 +40,10 @@
             <li><a href="login.html" id="menuAuthLink"><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
         </ul>
     </div>
+    <!-- Затемнение фона при открытом меню -->
     <div class="menu-overlay" id="menuOverlay"></div>
 
+    <!-- Основной контент: форма расчёта судьбы, кармический паспорт -->
     <main class="main-content compat-wrapper">
         <div class="compat-hero-editorial">
             <div class="compat-hero-title">
@@ -48,6 +52,7 @@
                 <p>Узнайте ваш кармический код через магию чисел и луны</p>
             </div>
             
+            <!-- Форма ввода данных: имя, дата рождения, фаза луны -->
             <div class="card premium-editorial-card compat-editorial-card compat-editorial-card--mt">
                 <div class="inputs-row-editorial destiny-inputs">
                     <div class="input-editorial-group">
@@ -78,11 +83,13 @@
                     </button>
                 </div>
 
+                <!-- Блок вывода звёздного паспорта (заполняется через JS) -->
                 <div id="destinyResultArea"></div>
             </div>
         </div>
     </main>
-    <footer class="main-footer">
+    <!-- Подвал сайта: навигация, соцсети, копирайт -->
+<footer class="main-footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <i class="fas fa-moon"></i> <span>АСТРАЛ</span>

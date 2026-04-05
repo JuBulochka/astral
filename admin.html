@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
   <body class="page-admin">
+<!-- Шапка сайта: логотип, кнопка авторизации, бургер-меню -->
 <header class="main-header">
         <div class="header-left">
             <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
@@ -30,9 +31,7 @@
         </div>
     </header>
     <div class="app">
-
-    
-
+    <!-- Боковое меню навигации -->
     <div class="side-menu" id="sideMenu">
         <button class="close-menu" id="closeMenuBtn">
           <i class="fas fa-times"></i>
@@ -64,7 +63,8 @@
           </li>
         </ul>
       </div>
-      <div class="menu-overlay" id="menuOverlay"></div>
+    <!-- Затемнение фона при открытом меню -->
+    <div class="menu-overlay" id="menuOverlay"></div>
 
       <!-- Оверлей авторизации администратора -->
       <div id="adminAuthOverlay" class="admin-auth-overlay">
@@ -90,6 +90,7 @@
         </div>
       </div>
 
+      <!-- Основной контент панели: статистика, редактор гороскопов (скрыт до авторизации) -->
       <main class="main-content page-profile-specific" id="adminContent" style="display:none">
           <div class="premium-hero admin-hero">
               <h1 class="premium-title"><i class="fas fa-crown"></i> Панель Администратора</h1>
@@ -188,7 +189,8 @@
                 </div>
           </div>
       </main>
-      <footer class="main-footer">
+      <!-- Подвал сайта: навигация, соцсети, копирайт -->
+<footer class="main-footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <i class="fas fa-moon"></i> <span>АСТРАЛ</span>

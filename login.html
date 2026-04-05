@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="page-auth">
+<!-- Шапка сайта: логотип, кнопка авторизации, бургер-меню -->
 <header class="main-header">
         <div class="header-left">
             <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
@@ -24,7 +25,7 @@
         </div>
 </header>
 <div class="app">
-
+    <!-- Боковое меню навигации -->
     <div class="side-menu" id="sideMenu">
         <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
         <ul>
@@ -36,8 +37,10 @@
             <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
         </ul>
     </div>
+    <!-- Затемнение фона при открытом меню -->
     <div class="menu-overlay" id="menuOverlay"></div>
 
+    <!-- Основной контент: форма входа в аккаунт -->
     <main class="auth-canvas">
         <div class="auth-glass-card">
             <h2>Врата Астрала</h2>
@@ -53,8 +56,8 @@
                     <i class="fas fa-key input-icon"></i>
                 </div>
 
-                <div class="msg-container">
-                    <div id="loginError" class="error-msg"></div>
+                <!-- Блок сообщения об ошибке при входе -->
+                <div class="msg-container"> class="error-msg"></div>
                 </div>
 
                 <button type="button" class="auth-submit-btn" id="loginBtn">
@@ -69,6 +72,7 @@
             </div>
         </div>
     </main>
+<!-- Подвал сайта: навигация, соцсети, копирайт -->
 <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-logo">

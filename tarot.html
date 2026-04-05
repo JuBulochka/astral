@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="page-tarot">
+<!-- Шапка сайта: логотип, кнопка авторизации, бургер-меню -->
 <header class="main-header">
         <div class="header-left">
             <a href="profile.html" class="user-icon" id="authBtn"><i class="fas fa-user"></i></a>
@@ -29,9 +30,7 @@
         </div>
     </header>
 <div class="app">
-
-    
-
+    <!-- Боковое меню навигации -->
     <div class="side-menu" id="sideMenu">
         <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
         <ul>
@@ -43,8 +42,10 @@
             <li><a href="login.html" id="menuAuthLink" ><i class="fas fa-sign-in-alt"></i> Авторизация</a></li>
         </ul>
     </div>
+    <!-- Затемнение фона при открытом меню -->
     <div class="menu-overlay" id="menuOverlay"></div>
 
+    <!-- Основной контент: вкладки фильтрации, сетка карт Таро -->
     <main class="main-content page-editorial">
         <section class="editorial-hero">
             <span class="subtitle">78 ключей к подсознанию</span>
@@ -52,6 +53,7 @@
             <p class="description">Таро — это система символов, 78 карт, отражающих жизненные пути, архетипы и судьбу. Нажмите на любую карту, чтобы узнать её значение.</p>
         </section>
 
+        <!-- Вкладки-фильтры для категорий карт (JS управляет видимостью блоков) -->
         <div class="tarot-filter-tabs">
             <button class="tarot-tab active" data-filter="all">Все карты</button>
             <button class="tarot-tab" data-filter="major">Старшие</button>
@@ -174,7 +176,8 @@
             </div>
         </div>
     </main>
-    <footer class="main-footer">
+    <!-- Подвал сайта: навигация, соцсети, копирайт -->
+<footer class="main-footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <i class="fas fa-moon"></i> <span>АСТРАЛ</span>
